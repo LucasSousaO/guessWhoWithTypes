@@ -1,0 +1,146 @@
+.botao{
+  width: inherit;
+  justify-content: center;
+  display: block;
+  background-color: lightblue;
+  border-radius:3rem;
+  cursor: pointer;
+  color: black;
+  font-size: 2em;
+  font-family:cursive;
+}
+.tela{
+  display: block;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+}
+.top{
+  display: inline-flex;
+  background-color: lightblue;
+  justify-content: center;
+  min-height: 20%;
+  max-height:250px;
+  width: 100%;
+  font-family:cursive;
+}
+.bottom{
+  display: flex;
+  background-color: lightgray;
+  max-height: 80%;
+  width: 100%;
+}
+.pontos{
+  display: block;
+}
+.left1{
+  width: 49%;
+  background-color: lightblue;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+
+}
+.right1{
+  width:50%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+}
+.left{
+  width: 49%;
+  background-color: lightblue;
+  display: inline-grid;
+
+}
+.right{
+  width:50%;
+  display: inline-grid;
+}
+.botao1{
+  display: block;
+  background-color: white;
+  border-radius:3rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-family:cursive;
+}
+.fill{
+  justify-content:center;
+  margin-left:47%;
+}
+
+.fill123{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hide{
+  display:none;
+}
+.vez{
+  font-weight: bold;
+  color: purple;
+  background-color: white;
+}
+
+.time{
+  color: black;
+}
+
+.winning{
+  color: green;
+}
+
+.loosing{
+  color:red;
+}
+.btt{
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  font-family:cursive;
+  font-weight: bold;
+  cursor:pointer;
+}
+.desaf{
+  color: black;
+  width:100px;
+  display: flex;
+  }
+
+.alert{
+  color: red;
+}
+
+.fillbt{
+justify-content:center;
+display: grid;
+}
+
+.acabou{
+  color:red;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: cursive;
+}
+.emtempo{
+  color:black;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.input{
+  height: 3em;
+  font-size: 3em;
+  cursor: auto;
+}
+#tema{
+  color: gray;
+  font-size: larger;
+}
