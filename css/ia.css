@@ -8,6 +8,7 @@
   color: black;
   font-size: 2em;
   font-family:cursive;
+  border-color: black;
 }
 .tela{
   display: block;
@@ -19,8 +20,7 @@
   display: inline-flex;
   background-color: lightblue;
   justify-content: center;
-  min-height: 20%;
-  max-height:250px;
+  height:60%;
   width: 100%;
   font-family:cursive;
 }
@@ -67,6 +67,7 @@
   color: black;
   font-weight: bold;
   font-family:cursive;
+  font-size: 1.2em;
 }
 .fill{
   justify-content:center;
@@ -106,6 +107,7 @@
   font-family:cursive;
   font-weight: bold;
   cursor:pointer;
+  font-size: 1.5em;
 }
 .desaf{
   color: black;
@@ -133,6 +135,7 @@ display: grid;
   font-size: 2.5em;
   font-weight: bold;
   font-family: cursive;
+  margin-top: 5%;
 }
 
 .input{
@@ -141,6 +144,25 @@ display: grid;
   cursor: auto;
 }
 #tema{
-  color: gray;
+  color: #464141;
   font-size: larger;
+}
+
+#escolha-tema{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+#sorteio{
+  align-self:center;
+  height: 20%;
+}
+
+#bt1, #bt2{
+  background-color: green;
+}
+#bt3, #bt4{
+  background-color: red;
+}
+#desafio{
+  margin-top: 5%;
 }

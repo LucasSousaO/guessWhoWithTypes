@@ -109,6 +109,7 @@ for(let x = 0 ; x <= time1.length-1; x++){
 if((time1[x] == '%')){
 console.log("achou a letra");
 time1.replace(time1[x],' ');
+time1.split('sdafsdfasd');
 }
 }
 console.log(time1);
@@ -234,7 +235,14 @@ function sort(elementos, temaDesafio){
 $botao.on("click",() =>
   {
 //console.log($escolhaTema[0].selectedIndex);
+  let url_atual = window.location.href; // tirar 11 caracteres
+  console.log(url_atual.length);
 
+  let url_base  = ""
+  for (o = 0 ; o < url_atual.length -11 ; o++){
+    url_base = url_base + url_atual[o];
+  }
+  console.log(url_base);
   if($t1[0].value == "" || $t2[0].value == "" || perguntas == 0)
   {
     alert("preencha os campos.");
@@ -244,7 +252,7 @@ $botao.on("click",() =>
     time1 = $t1[0].value;
     time2 = $t2[0].value;
 
-      url = "file:///C:/Users/lucas/Documents/GitHub/guessWhoWithTypes/game.html?time1="+time1+"&time2="+time2+"&tempo="+perguntas+"&tema="+temas[$escolhaTema[0].selectedIndex].Tema;
+      url = url_base+"/game.html?time1="+time1+"&time2="+time2+"&tempo="+perguntas+"&tema="+temas[$escolhaTema[0].selectedIndex].Tema;
 
 
       chamapag(url);
@@ -281,6 +289,8 @@ $desafio.on("click", () =>
   { //trocavez();
 
     (vez == 1 ? bttime1() : vez == 2 ? bttime2() : acabou())
+    $desafio.addClass("hide");
+    $resultado.removeClass("hide");
 
  temaDesafio = elementos[elemento].Tema;
 
@@ -291,8 +301,7 @@ $desafio.on("click", () =>
 
     i = tempododesafio;
 
-    $desafio.addClass("hide");
-    $resultado.removeClass("hide");
+
   //time();
 });
 
